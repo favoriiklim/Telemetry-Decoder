@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <!-- Test data generator. Not part of the deliverable. -->
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net10.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>CubeSatTelemetry.Coder</RootNamespace>
+    </PropertyGroup>
+
+    <!-- One-way dependency: the coder consumes the decoder's byte map and CRC.
+         Nothing in the decoder library references this project. -->
+    <ItemGroup>
+        <ProjectReference Include="..\..\CubeSatTelemetry.Decoder\CubeSatTelemetry.Decoder.csproj" />
+    </ItemGroup>
+
+</Project>

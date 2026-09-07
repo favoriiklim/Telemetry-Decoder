@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <!-- Class library: this is what the ground station application references.
+         It has no console, no I/O and no entry point. -->
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>CubeSatTelemetry.Decoder</RootNamespace>
+    </PropertyGroup>
+
+</Project>
